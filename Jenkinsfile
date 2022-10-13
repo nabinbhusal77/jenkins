@@ -25,5 +25,11 @@ pipeline {
                 echo 'Testing.........'
             }
         }
+        
+        stage('Notify') {
+            steps {
+                echo "Sending Notification to Developer .........."
+            }
+        }
     }
 }
